@@ -8,13 +8,13 @@ import urllib3
 urllib3.disable_warnings()
 
 
-class Socpoc(metaclass=abc.ABCMeta):
+class BasicPoc(metaclass=abc.ABCMeta):
     log_level = logging.INFO
 
     def __init__(self) -> None:
-        self.logger = logging.Logger("SOCPOC", level=logging.INFO)
+        self.logger = logging.Logger("BasicPoc", level=logging.INFO)
         self.mode = 'common'
-        self.name = "BasePoc"
+        self.name = "BasicPoc"
         self.example = ""
         self.session = requests.Session()
         self.session.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; rv:2.0.1) Gecko/20100101 Firefox/4.0.1"}

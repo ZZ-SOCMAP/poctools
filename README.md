@@ -1,20 +1,20 @@
-# socpoctools
+# poctools
 
 ## install
 
 ```bash
-pip install socpoctools
+pip install poctools
 ```
 
 ## example
 
 ```python
-from socpoctools import Socpoc
-from socpoctools.encrypt import md5
-from socpoctools.ocr import new_number
+from poctools import BasicPoc
+from poctools.encrypt import md5
+from poctools.ocr import new_number
 
 
-class TianMaiNetworkVideoSurveillanceWeakCipherPoc(Socpoc):
+class TianMaiNetworkVideoSurveillanceWeakCipherPoc(BasicPoc):
     jsessionid_uri = "/login.jsp"
     login_uri = "/j_login.auth"
     verify_code_uri = "/jsp/common/validateCode.jsp"

@@ -44,9 +44,8 @@ class TianMaiNetworkVideoSurveillanceWeakCipherPoc(Socpoc):
 
 
 if __name__ == '__main__':
-    target = "http://221.176.217.58:18080"
+    target = "http://127.0.0.1:18080"
     tp = TianMaiNetworkVideoSurveillanceWeakCipherPoc()
     result = tp.run(target)
     print(f"{target} -> {result}")
 ```
-

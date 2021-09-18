@@ -3,3 +3,4 @@
 **/tests
 **/venv
 **/env
+**/__pycache__
